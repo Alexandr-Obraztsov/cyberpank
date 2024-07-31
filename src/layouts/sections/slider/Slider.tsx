@@ -7,17 +7,16 @@ import {StyledContainer} from "../../../components/StyledContainer";
 import background1 from "../../../assets/images/background1.webp"
 import background2 from "../../../assets/images/background2.webp"
 import background3 from "../../../assets/images/background3.webp"
+import {PrimaryText} from "../../../components/PrimaryText";
 
 export const Slider = () => {
     return (
         <StyledSlider>
-            <StyledContainer>
+            <StyledContainer withoutPadding={true}>
                 <FlexWrapper justifyContent="flex-end" alignItems="flex-end" height="100%">
                     <Dialog>
-                        <FlexWrapper gap="25px" direction="column" alignItems="flex-start">
-                            <Text>Доступно на<br/>всех платформах</Text>
+                            <PrimaryText>Доступно на<br/>всех платформах</PrimaryText>
                             <Link href="#" type="accent">Узнать больше</Link>
-                        </FlexWrapper>
                     </Dialog>
                 </FlexWrapper>
             </StyledContainer>
@@ -44,11 +43,4 @@ const Dialog = styled.div`
     background-color: ${theme.colors.accent};
     clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0% 100%, 0% 50px);
     user-select: none;
-`
-
-
-const Text = styled.span`
-    font-size: 62px;
-    line-height: 62px;
-    font-family: Archangelsk, sans-serif;
 `

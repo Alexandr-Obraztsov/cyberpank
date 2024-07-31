@@ -11,6 +11,7 @@ export const Link = styled.a<LinkPropsType>`
     font-family: Roboto, sans-serif;
     line-height: 40px;
     font-size: 24px;
+    display: inline-block;
     
     ${props => {
         switch (props.type) {
