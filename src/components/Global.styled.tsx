@@ -1,0 +1,19 @@
+import {createGlobalStyle} from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+`
