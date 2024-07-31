@@ -1,13 +1,15 @@
 import React from 'react';
 import {Header} from "./layouts/header/Header";
 import styled from "styled-components";
+import {Slider} from "./layouts/sections/slider/Slider";
 
 function App() {
-  return (
-    <Box>
-    <Header/>
-    </Box>
-  );
+    return (
+        <Box>
+            <Header/>
+            <Slider/>
+        </Box>
+    );
 }
 
 const Box = styled.div`
