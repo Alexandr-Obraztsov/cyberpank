@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 type FlexWrapperPropsType = {
-    alignItems: string,
-    justifyContent: string,
-    gap: string,
-    direction: string,
-    wrap: string
+    alignItems?: string,
+    justifyContent?: string,
+    gap?: string,
+    direction?: string,
+    wrap?: string
+    height?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -15,4 +16,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     gap: ${(props: FlexWrapperPropsType) => props.gap};
     flex-direction: ${(props: FlexWrapperPropsType) => props.direction};
     flex-wrap: ${(props: FlexWrapperPropsType) => props.wrap};
+    height: ${(props: FlexWrapperPropsType) => props.height || "100%"};
 `

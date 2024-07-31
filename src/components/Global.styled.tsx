@@ -1,4 +1,7 @@
 import {createGlobalStyle} from "styled-components";
+import "../assets/fonts/Archangelsk.eot";
+import "../assets/fonts/Archangelsk.ttf";
+import "../assets/fonts/Archangelsk.woff";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -15,5 +18,9 @@ export const GlobalStyles = createGlobalStyle`
     
     ul {
         list-style: none;
+    }
+    
+    body {
+        font-family: Archangelsk, sans-serif;
     }
 `
